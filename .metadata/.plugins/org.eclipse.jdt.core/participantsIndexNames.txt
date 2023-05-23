@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\webdev2\newchat\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1635015688.index
+\chat\src\main\java
+C:\webdev2\newchat\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1509467745.index
+\chat\src\main\java

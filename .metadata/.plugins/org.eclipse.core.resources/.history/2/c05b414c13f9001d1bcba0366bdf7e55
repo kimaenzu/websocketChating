@@ -1,0 +1,40 @@
+package socket;
+
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.server.ServerEndpoint;
+
+@ServerEndpoint("/wsocket")
+public class WSocket 
+{
+	//	onopen 이벤트가 호출 되면 실행되는 함수
+	@OnOpen
+	public void handleOpen()
+	{
+		System.out.println("클라이언트가 접속했습니다.");
+	}
+	//	onclose 이벤트가 호출 되면 실행되는 함수
+	@OnClose
+	public void handleClose()
+	{
+		System.out.println("클라이언트가 연결을 해제했습니다.");
+	}
+	//	onerror 이벤트가 호출 되면 실행되는 함수
+	@OnError
+	public void handleError(Throwable t)
+	{
+		t.printStackTrace();
+	}
+	//	onmessage 이벤트가 호출 되면 실행되는 함수
+	@OnMessage
+	public String handleMessage(String message)
+	{
+		//	서버가 받는다.
+		System.out.println("클라이언트가 보내온 메시지 : ");
+		System.out.println(message);
+		
+		return "메시지 수신 완료";
+	}
+}

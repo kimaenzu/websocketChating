@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\webdev2\newchat\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+732548626.index
+2132342881.index
+673610892.index
+3953738695.index
+2254225401.index
+580730638.index
